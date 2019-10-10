@@ -4,6 +4,7 @@ module.exports = {
   getPromotedProducts,
   getAllProducts,
   getProductById,
+  getAllCategories
 };
 
 
@@ -26,6 +27,9 @@ function getPromotedProducts() {
     .orderBy("products.id");
 }
 
+function getAllCategories() {
+  return db("categories")
+}
 function getAllProducts() {
   return db
     .select('*')

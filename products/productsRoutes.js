@@ -19,6 +19,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/categories", async (req, res) => {
+  const categories = await productsDb.getAllCategories();
+  try {
+    if (categories) {
+      res.status(200).json(categories);
+    } else {
+      res.status(404).json("There are no available categories.");
+    }
+  } catch (e) {
+    res.status(500).json(e);
+  }
+});
+
 
 
 router.get("/:id", async (req, res) => {

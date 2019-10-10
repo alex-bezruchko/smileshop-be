@@ -40,6 +40,8 @@ function getAllProducts() {
       "products.description",
       "products.sku",
       "products.price",
+      "categories.id",
+
       "categories.cat_name"
     )
     .from("products")

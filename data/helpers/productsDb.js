@@ -27,7 +27,7 @@ function getPromotedProducts() {
     .orderBy("products.id");
 }
 
-function getAllCategories() {
+async function getAllCategories() {
   return db("categories")
 }
 async function getAllProducts() {

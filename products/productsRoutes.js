@@ -7,8 +7,8 @@ router.use(express.json());
 
 
 router.get("/", async (req, res) => {
-  const news = await productsDb.getAllProducts();
   try {
+    const news = await productsDb.getAllProducts();
     if (news) {
       res.status(200).json(news);
     } else {
@@ -20,8 +20,8 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/categories", async (req, res) => {
-  const categories = await productsDb.getAllCategories();
   try {
+    const categories = await productsDb.getAllCategories();
     if (categories) {
       res.status(200).json(categories);
     } else {

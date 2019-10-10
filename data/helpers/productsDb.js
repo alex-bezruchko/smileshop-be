@@ -12,7 +12,7 @@ function getPromotedProducts() {
   return db
     .select(
       "products.id",
-      "products.title",
+      "products.name",
       "products.summary",
       "products.body",
       "products.postMainImg",

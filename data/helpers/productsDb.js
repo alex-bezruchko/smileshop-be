@@ -30,7 +30,7 @@ function getPromotedProducts() {
 function getAllCategories() {
   return db("categories")
 }
-function getAllProducts() {
+async function getAllProducts() {
   return db
     .select(
       "products.id",

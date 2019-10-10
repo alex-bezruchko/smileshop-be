@@ -37,11 +37,11 @@ function getAllProducts() {
       "products.name",
       "products.type",
       "products.image",
+      "products.category_id",
       "products.description",
       "products.sku",
       "products.price",
       "categories.id",
-
       "categories.cat_name"
     )
     .from("products")

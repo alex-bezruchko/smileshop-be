@@ -35,11 +35,11 @@ function getAllProducts() {
     .select(
       "products.id",
       "products.name",
-      "products.summary",
-      "products.body",
-      "products.postMainImg",
-      "products.user_id",
-      "categories.id",
+      "products.type",
+      "products.image",
+      "products.description",
+      "products.sku",
+      "products.price",
       "categories.cat_name"
     )
     .from("products")

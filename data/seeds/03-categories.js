@@ -1,14 +1,14 @@
 exports.seed = function (knex, Promise) {
   return knex("categories").insert([
     {
-      name: "supplements",
+      cat_name: "supplements",
     },
-    { name: "herbs" },
-    { name: "spices" },
-    { name: "bulk tea" },
-    { name: "ointments" },
-    { name: "bath & beauty" },
-    { name: "books" },
+    { cat_name: "herbs" },
+    { cat_name: "spices" },
+    { cat_name: "bulk tea" },
+    { cat_name: "ointments" },
+    { cat_name: "bath & beauty" },
+    { cat_name: "books" },
 
   ]);
 };

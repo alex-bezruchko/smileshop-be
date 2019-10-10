@@ -18,7 +18,7 @@ function getPromotedProducts() {
       "products.postMainImg",
       "products.user_id",
       "categories.id",
-      "categories.name"
+      "categories.cat_name"
     )
     .from("products")
     .leftJoin("categories", "categories.id", "=", "products.category_id")
@@ -32,10 +32,18 @@ function getAllCategories() {
 }
 function getAllProducts() {
   return db
-    .select('*')
+    .select(
+      "products.id",
+      "products.name",
+      "products.summary",
+      "products.body",
+      "products.postMainImg",
+      "products.user_id",
+      "categories.id",
+      "categories.cat_name"
+    )
     .from("products")
     .leftJoin("categories", "categories.id", "=", "products.category_id")
-    .orderBy("products.id", "desc");
 }
 
 function getProductById(product_id) {

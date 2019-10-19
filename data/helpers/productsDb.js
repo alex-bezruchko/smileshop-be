@@ -4,7 +4,8 @@ module.exports = {
   getPromotedProducts,
   getAllProducts,
   getProductById,
-  getAllCategories
+  getAllCategories,
+  getProductByCategory
 };
 
 
@@ -55,4 +56,25 @@ function getProductById(product_id) {
     .where("products.id", product_id)
 
     .first();
+}
+
+function getProductByCategory(category_id) {
+  return db
+    .select(
+      "products.id",
+      "products.name",
+      "products.type",
+      "products.image",
+      "products.category_id",
+      "products.description",
+      "products.sku",
+      "products.price",
+      // "categories.id",
+      "categories.cat_name"
+    )
+    .from("products")
+    .where("products.category_id", category_id)
+    .leftJoin("categories", "categories.id", "=", "products.category_id")
+
+
 }

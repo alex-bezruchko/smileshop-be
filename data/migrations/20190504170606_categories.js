@@ -5,6 +5,10 @@ exports.up = function (knex, Promise) {
       .text("cat_name", 255)
       .notNullable()
       .unique();
+    categories
+      .text("cat_slug", 255)
+      .notNullable()
+      .unique();
     categories.text("logo", 255).unique();
   });
 };

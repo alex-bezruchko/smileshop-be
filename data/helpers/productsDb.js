@@ -69,7 +69,7 @@ function getProductByCategory(category_id) {
       "products.description",
       "products.sku",
       "products.price",
-      // "categories.id",
+      "categories.id",
       "categories.cat_name"
     )
     .from("products")

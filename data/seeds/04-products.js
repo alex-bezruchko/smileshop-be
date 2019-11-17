@@ -96,7 +96,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 999
     },
-
     {
       name: "2019-08-05T21:17:13.705Z",
       type: "bottle",
@@ -145,8 +144,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1299
     },
-
-    ///
     {
       name: "Lycorice Root",
       type: "bottle",
@@ -183,7 +180,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 2499
     },
-
     {
       name: "Palmetto Extract",
       type: "bottle",
@@ -232,7 +228,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1999
     },
-
     {
       name: "Acidophilus",
       type: "bottle",
@@ -329,7 +324,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 999
     },
-
     {
       name: "2019-08-05T21:17:13.705Z",
       type: "bottle",
@@ -366,8 +360,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1299
     },
-
-    ///
     {
       name: "Lycorice Root",
       type: "bottle",
@@ -404,7 +396,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 2499
     },
-
     {
       name: "Palmetto Extract",
       type: "bottle",
@@ -549,7 +540,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 999
     },
-
     {
       name: "2019-08-05T21:17:13.705Z",
       type: "bottle",
@@ -598,8 +588,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1299
     },
-
-    ///
     {
       name: "Lycorice Root",
       type: "bottle",
@@ -636,7 +624,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 2499
     },
-
     {
       name: "Palmetto Extract",
       type: "bottle",
@@ -685,7 +672,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1999
     },
-
     {
       name: "Acidophilus",
       type: "bottle",
@@ -782,7 +768,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 999
     },
-
     {
       name: "2019-08-05T21:17:13.705Z",
       type: "bottle",
@@ -819,8 +804,6 @@ exports.seed = function (knex, Promise) {
       shipping: false,
       price: 1299
     },
-
-    ///
     {
       name: "Lycorice Root",
       type: "bottle",
@@ -857,7 +840,6 @@ exports.seed = function (knex, Promise) {
       shipping: true,
       price: 2499
     },
-
     {
       name: "Palmetto Extract",
       type: "bottle",

@@ -12,7 +12,7 @@ module.exports = {
 function getPromotedProducts() {
   return db
     .select(
-      "products.id",
+      "products._id",
       "products.name",
       "products.summary",
       "products.body",
@@ -25,7 +25,7 @@ function getPromotedProducts() {
     .leftJoin("categories", "categories.id", "=", "products.category_id")
 
     .limit(5)
-    .orderBy("products.id");
+    .orderBy("products._id");
 }
 
 async function getAllCategories() {
@@ -34,7 +34,7 @@ async function getAllCategories() {
 async function getAllProducts() {
   return db
     .select(
-      "products.id",
+      "products._id",
       "products.name",
       "products.type",
       "products.image",
@@ -49,11 +49,11 @@ async function getAllProducts() {
     .leftJoin("categories", "categories.id", "=", "products.category_id")
 }
 
-function getProductById(product_id) {
+function getProductById(_id) {
   return db
     .select('*')
     .from("products")
-    .where("products.id", product_id)
+    .where("products._id", _id)
 
     .first();
 }
@@ -61,7 +61,7 @@ function getProductById(product_id) {
 function getProductByCategory(category_id) {
   return db
     .select(
-      "products.id",
+      "products._id",
       "products.name",
       "products.type",
       "products.image",

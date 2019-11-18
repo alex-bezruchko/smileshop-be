@@ -12,7 +12,7 @@ exports.up = function (knex, Promise) {
         reviews
             .integer("product_id")
             .unsigned()
-            .references("id")
+            .references("_id")
             .inTable("products");
     });
 };

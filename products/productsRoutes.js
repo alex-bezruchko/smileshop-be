@@ -43,6 +43,7 @@ router.get("/categories/:id", async (req, res) => {
       res.status(404).json("There are no available categories.");
     }
   } catch (e) {
+    console.log(e)
     res.status(500).json(e);
   }
 });
